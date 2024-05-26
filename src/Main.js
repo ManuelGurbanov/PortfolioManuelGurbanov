@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import LoadingScreen from './components/LoadingScreen';
 import Presentation from './components/Presentation';
 import Social from './components/Social';
 import Studies from './components/Studies';
@@ -7,23 +8,34 @@ import Slider from './components/Slider';
 import Certificates from './components/Certificates';
 
 export default function Main() {
+    const [loading, setLoading] = useState(true);
+
+    const handleFinishLoading = () => {
+        setLoading(false);
+    };
+
     return (
-        <div className='flex-col justify-center w-[100vw] mt-5'>
-            <div className='w-[80vw] m-auto md:w-[60vw]'>
+        <div className='relative'>
+            {loading && <LoadingScreen onFinish={handleFinishLoading} />}
+            <div className={`transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+                <div className='flex-col justify-center w-[100vw] mt-5'>
+                    <div className='w-[80vw] m-auto md:w-[60vw]'>
 
-                    <Presentation />
+                        <Presentation />
 
-                <section className='flex flex-col justify-center w-full gap-4 m-auto sm:flex-row'>
+                        <section className='flex flex-col justify-center w-full gap-4 m-auto sm:flex-row'>
 
-                    <Social /><Studies />
-                    
-                </section>
+                            <Social /><Studies />
+                            
+                        </section>
 
-                    <Projects />
+                        <Projects />
 
-                    <Slider/>
+                        <Slider />
 
-                    <Certificates/>
+                        <Certificates />
+                    </div>
+                </div>
             </div>
         </div>
     );
