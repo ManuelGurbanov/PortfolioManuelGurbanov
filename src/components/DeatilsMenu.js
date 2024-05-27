@@ -5,7 +5,7 @@ const DetailsMenu = ({ imgUrl, name, description, stack, onClose, certifUrl }) =
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
       <div className="relative w-full max-w-[90vw] max-h-[90vh] md:max-w-[60vw] md:max-h-[70vh] p-6 rounded-lg shadow-lg bg-mycolors-bg overflow-y-scroll overscroll-x-none">
         <button 
-          className="absolute text-2xl text-red-500 top-4 left-4 hover:text-red-600" 
+          className="absolute text-2xl text-red-500 top-4 left-6 hover:text-red-600" 
           onClick={onClose}
         >
           ✖

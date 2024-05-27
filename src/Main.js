@@ -7,6 +7,8 @@ import Projects from './components/Projects';
 import Slider from './components/Slider';
 import Certificates from './components/Certificates';
 
+import Contact from './components/Contact';
+
 export default function Main() {
     const [loading, setLoading] = useState(true);
 
@@ -34,6 +36,8 @@ export default function Main() {
                         <Slider />
 
                         <Certificates />
+
+                        <Contact/>
                     </div>
                 </div>
             </div>

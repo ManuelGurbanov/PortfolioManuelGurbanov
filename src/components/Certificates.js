@@ -39,6 +39,7 @@ const CertificatesList = [
         name: "Inglés para Desarrolladores de Software",
         imgUrl: JavaLogo,
         description: "Curso de Inglés técnico para Desarrolladores de Software dictado por el CUI (Centro Universitario de Idiomas)",
+        stack: "B1.2, Argentina Programa 4.0",
         certifUrl: EnglishCertif
     }
 ]

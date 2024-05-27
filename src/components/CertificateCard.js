@@ -9,7 +9,7 @@ const CertificateCard = ({ imgUrl, name, stack, onClick }) => {
         src={imgUrl} 
       />
       <footer className="text-center">
-        <h1 className="text-lg font-bold text-mycolors-2">{name}</h1>
+        <h1 className="w-full text-lg font-bold text-mycolors-2">{name}</h1>
         <p className="text-sm text-gray-600">{stack}</p>
       </footer>
     </div>
