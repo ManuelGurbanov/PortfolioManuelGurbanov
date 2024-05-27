@@ -1,5 +1,6 @@
 import React from "react";
 import CopyEmailButton from "./CopyEmailButton";
+
 const ContactCard = ({ name, description, url, isGmail, gmail }) => {
     return (
         <div className="w-full p-4 shadow-md bg-mycolors-bg rounded-2xl">
