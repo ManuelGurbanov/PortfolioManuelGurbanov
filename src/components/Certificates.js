@@ -8,6 +8,7 @@ import JavaLogo from "./img/JavaLogo.png";
 import CertificateCard from "./CertificateCard";
 import EnglishCertif from "./img/EnglishCertif.jpg";
 import MachineLearningCertif from "./img/MachineLearningCertif.jpg";
+import PythonCertif from "./img/PythonCertif.jpg";
 
 const CertificatesList = [
     {
@@ -15,7 +16,8 @@ const CertificatesList = [
         name: "Fullstack Python",
         imgUrl: PythonLogo,
         description: "Curso de Desarrollo Web con Python y Django dictado por la Agencia Codo a Codo 4.0",
-        stack: "Python, Django, MySQL, Metodología Scrum"
+        stack: "Python, Django, MySQL, Metodología Scrum",
+        certifUrl: PythonCertif
     },
     {
         id: 1,
