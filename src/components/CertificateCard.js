@@ -2,7 +2,7 @@ import React from 'react';
 
 const CertificateCard = ({ imgUrl, name, stack, onClick }) => {
   return (
-    <div className="flex flex-col items-center p-4 rounded-lg shadow-lg cursor-pointer hover:bg-mycolors-sutilbg" onClick={onClick}>
+    <div className="flex flex-col items-center p-4 transition duration-150 rounded-lg shadow-lg cursor-pointer hover:bg-mycolors-sutilbg" onClick={onClick}>
       <img 
         className="object-cover w-24 h-24 mb-4 rounded-full"
         alt={name} 

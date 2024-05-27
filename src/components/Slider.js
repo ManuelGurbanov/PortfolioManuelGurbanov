@@ -25,21 +25,21 @@ const Slider = () => {
       <p className='ml-3 font-semibold text-slate-500'>Entre 2020 y 2022 publiqué 9 aplicaciones en Google Play que acumularon +35.000 descargas y +125.000 impresiones.</p>
       <p className='ml-3 font-semibold text-slate-200'>Desarrolladas en su totalidad por mí, fueron mi primer contacto con la Programación Orientada a Objectos.</p>
       
-      <div className="relative flex items-center justify-center w-3/4 mx-auto mt-10">
+      <div className="relative flex items-center justify-center w-full mx-auto mt-10 sm:w-3/5">
         <button
           onClick={prevSlide}
-          className="absolute left-[0] p-2 transform -translate-y-1/2 bg-black bg-opacity-75 rounded-full shadow-md top-1/2 hover:bg-opacity-100"
+          className="absolute left-[-30px] p-2 transform -translate-y-1/2 bg-zinc-700 bg-opacity-75 rounded-full shadow-md top-1/2 hover:bg-opacity-25"
         >
           <img src={ArrowLeft} alt='ArrowLeft' className='w-6' />
         </button>
 
-        <div className="w-full max-w-xl mb-4 overflow-hidden">
-          <img src={images[currentIndex]} alt="slider" className="object-cover w-full h-64 rounded-xl" />
+        <div className="w-full mb-4 overflow-hidden">
+          <img src={images[currentIndex]} alt="slider" className="w-full h-auto object-full rounded-xl sm:object-cover" />
         </div>
 
         <button
           onClick={nextSlide}
-          className="absolute right-[0] p-2 transform -translate-y-1/2 bg-black bg-opacity-75 rounded-full shadow-md top-1/2 hover:bg-opacity-100"
+          className="absolute right-[-30px] p-2 transform -translate-y-1/2 bg-zinc-700 bg-opacity-75 rounded-full shadow-md top-1/2 hover:bg-opacity-25"
         >
           <img src={ArrowRight} alt='ArrowRight' className='w-6' />
         </button>
