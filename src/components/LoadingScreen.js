@@ -12,7 +12,7 @@ const LoadingScreen = ({ onFinish }) => {
         const timer = setTimeout(() => {
             setFadeOut(true);
             setTimeout(onFinish, 1000);
-        }, 1200);
+        }, 1400);
 
         return () => {
             clearTimeout(timer);
