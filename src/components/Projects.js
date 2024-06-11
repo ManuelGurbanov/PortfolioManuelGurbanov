@@ -6,8 +6,17 @@ import ArsenalImg from './img/ArsenalImg.webp';
 import MoviesImg from './img/MoviesImg.webp';
 import StreamingImg from './img/StreamingImg.webp';
 import CafesImg from './img/CafesImg.webp';
+import NikeImg from './img/NikeProyect.jpg';
 
 const projectsData = [
+    {
+        id: 0,
+        name: 'Web de Nike',
+        description: 'Carrito de compras y database de Productos. Diseño Responsive con Tailwind CSS. Realizada con Django y SQLite.',
+        technologies: ['React','Python', 'Tailwind'],
+        imgLink: NikeImg,
+        gitLink: "https://github.com/ManuelGurbanov/Clon-Nike"
+    },
     {
         id: 1,
         name: 'App de Películas',
