@@ -6,12 +6,19 @@ const ProjectList = ({ projects }) => {
     <div className='flex-col gap-4 lg:grid lg:grid-cols-2'>
       {projects.map((project) => (
         <div key={project.id} className='flex flex-col mt-3 shadow-md bg-mycolors-bg rounded-xl ring-1'>
-          <div>
+          <div className='relative'>
             <img
               className='object-cover w-full h-full rounded-t-xl'
               src={project.imgLink}
               alt={project.name}
             />
+            <div className={
+              'absolute top-0 left-1 bg-red-600 text-white font-bold px-2 py-1 rounded-br-xl rounded-lg ' +
+              (project.inProgress ? 'block' : 'hidden')
+            }>
+              <h1>En Progreso</h1>
+            </div>
+
           </div>
           <div className='flex flex-col flex-1 p-4'>
             <h3 className='mb-3 ml-3 font-bold text-white'>{project.name}</h3>
@@ -22,7 +29,7 @@ const ProjectList = ({ projects }) => {
             {project.deployLink && (
                 <a
                   href={project.deployLink}
-                  className="px-4 py-2 text-white transition duration-75 rounded-lg bg-mycolors-bg hover:ring-mycolors-ring ring-1 ring-white"
+                  className="px-4 py-2 text-white transition duration-75 rounded-lg bg-mycolors-2 hover:scale-105 ring-1 ring-mycolors-2 ring-opacity-45"
                   rel="noopener noreferrer"
                   target='_blank'
                 >

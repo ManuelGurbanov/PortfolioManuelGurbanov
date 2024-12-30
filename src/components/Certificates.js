@@ -2,13 +2,14 @@ import React from "react";
 import { useState } from "react";
 
 import DetailsMenu from "./DeatilsMenu.js";
-import PythonLogo from "./img/PythonLogo.png";
-import JavaLogo from "./img/JavaLogo.png";
-
+import PythonLogo from "./img/PythonLogo.webp";
+import JavaLogo from "./img/JavaLogo.webp";
+import UbaLogo from "./img/UbaLogo.webp";
 import CertificateCard from "./CertificateCard";
 import EnglishCertif from "./img/EnglishCertif.jpg";
 import MachineLearningCertif from "./img/MachineLearningCertif.jpg";
 import PythonCertif from "./img/PythonCertif.jpg";
+import JavaCertif from "./img/JavaCertif.webp";
 
 const CertificatesList = [
     {
@@ -24,7 +25,8 @@ const CertificatesList = [
         name: "Fullstack Java",
         imgUrl: JavaLogo,
         description: "Curso de Desarrollo Web con Python y Django",
-        stack: "Java, Vue.js, Git, MySQL, Metodología Scrum"
+        stack: "Java, Vue.js, Git, MySQL, Metodología Scrum",
+        certifUrl: JavaCertif
     },
     {
         id: 2,
@@ -37,7 +39,7 @@ const CertificatesList = [
     {
         id: 3,
         name: "Inglés para Desarrolladores de Software",
-        imgUrl: JavaLogo,
+        imgUrl: UbaLogo,
         description: "Curso de Inglés técnico para Desarrolladores de Software dictado por el CUI (Centro Universitario de Idiomas)",
         stack: "B1.2, Argentina Programa 4.0",
         certifUrl: EnglishCertif
