@@ -15,7 +15,7 @@ const Studies = () => {
                     <h3 className="text-white text-2xl font-bold">Materias Aprobadas</h3>
                     <p>Algoritmos y Estructuras de Datos I</p>
                     <p>Álgebra I</p>
-                    <p>Organizador del Computador I (Sistemas Digitales)</p>
+                    <p>Organización del Computador I</p>
                     <h3 className="text-white text-2xl font-bold mt-4">Materias en Curso</h3>
                     <p>Algoritmos y Estructuras de Datos II</p>
                     <p>Organizador del Computador II</p>
