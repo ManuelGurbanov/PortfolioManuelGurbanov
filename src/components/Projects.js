@@ -12,22 +12,22 @@ import OptixImg from './img/OptixImg.webp';
 const projectsData = [
     {
         id: 0,
-        name: '¿A Dónde Vamos?',
-        description: 'Web y Aplicación Android con cafeterías de Buenos Aires donde podrás reseñar y ver qué opinan tus amigos de cada Café.',
-        technologies: ['React', 'Tailwind', 'Firebase'],
-        inProgress: true,
-        imgLink: CafesImg,
-        deployLink: "https://www.adondevamoscafe.com.ar",
-        gitLink: "https://github.com/ManuelGurbanov/ADondeVamos-Landing"
-    },
-    {
-        id: 1,
         name: 'Opptix',
         description: 'Web para la plataforma Opptix, que lleva a cabo desarrollos en 3D.',
         technologies: ['React', 'Tailwind'],
         inProgress: true,
         imgLink: OptixImg,
+        deployLink: "https://opptix.com.ar/",
         gitLink: "https://github.com/ManuelGurbanov/Opptix-Web"
+    },
+    {
+        id: 1,
+        name: '¿A Dónde Vamos?',
+        description: 'Web y Aplicación Android con cafeterías de Buenos Aires donde podrás reseñar y ver qué opinan tus amigos de cada Café.',
+        technologies: ['React', 'Tailwind', 'Firebase'],
+        imgLink: CafesImg,
+        deployLink: "https://www.adondevamoscafe.com.ar",
+        gitLink: "https://github.com/ManuelGurbanov/ADondeVamos-Landing"
     },
     {
         id: 2,

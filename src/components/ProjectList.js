@@ -22,7 +22,7 @@ const ProjectList = ({ projects }) => {
           </div>
           <div className='flex flex-col flex-1 p-4'>
             <h3 className='mb-3 ml-3 font-bold text-white'>{project.name}</h3>
-            <p className='mb-2 ml-3 font-semibold text-slate-600'>{project.description}</p>
+            <p className='mb-2 ml-3 text-slate-300'>{project.description}</p>
             <p className='mb-4 ml-3 font-semibold text-slate-700'>{project.technologies.join(', ')}</p>
 
             <div className="flex gap-2 mt-auto">

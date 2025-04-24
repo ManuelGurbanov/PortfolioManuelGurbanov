@@ -4,7 +4,7 @@ import LinkedInButton from './img/LinkedInButton.webp';
 const Social = () => {
     return (
         <div className="w-full gap-5 p-4 mt-4 shadow-md rounded-2xl bg-mycolors-bg flex-column ring-mycolors-ring ring-1">
-            <h1 className="mt-2 text-xl font-semibold text-mycolors-2">Mis Redes:</h1>
+            <h1 className="mt-2 text-xl font-semibold text-mycolors-2">Pueden encontrarme en:</h1>
             <div className="flex gap-4 mt-4">
                 <a href="https://github.com/ManuelGurbanov" className="transition duration-75 hover:scale-105" rel="noopener noreferrer" target='_blank'>
                     <img
