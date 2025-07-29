@@ -15,7 +15,7 @@ const projectsData = [
         name: 'Opptix',
         description: 'Web para la plataforma Opptix, que lleva a cabo desarrollos en 3D.',
         technologies: ['React', 'Tailwind'],
-        inProgress: true,
+        inProgress: false,
         imgLink: OptixImg,
         deployLink: "https://opptix.com.ar/",
         gitLink: "https://github.com/ManuelGurbanov/Opptix-Web"

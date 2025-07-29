@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import Correlatividades from './Correlatividades';
+
 const Studies = () => {
     const [progress, showProgress] = useState(false);
     return (
@@ -10,21 +12,20 @@ const Studies = () => {
                     "fixed left-0 top-0 w-screen h-screen bg-black bg-opacity-50 z-30 flex justify-center items-center" +
                     (progress ? " block" : " hidden")
                 }
+                onClick={() => showProgress(false)}
             >
-                <div className="px-12 py-8 bg-mycolors-bg text-left rounded-xl flex flex-col justify-center items-center text-mycolors-2 z-50">
-                    <h3 className="text-white text-2xl font-bold">Materias Aprobadas</h3>
-                    <p>Algoritmos y Estructuras de Datos I</p>
-                    <p>Álgebra I</p>
-                    <p>Organización del Computador I</p>
-                    <h3 className="text-white text-2xl font-bold mt-4">Materias en Curso</h3>
-                    <p>Algoritmos y Estructuras de Datos II</p>
-                    <p>Organizador del Computador II</p>
-
-                    <button
-                        className="bg-mycolors-2 px-2 py-1 text-white hover:scale-105 transition-all duration-75 rounded-xl mt-4"
-                    onClick={() => showProgress(false)}>
-                        Volver
-                    </button>
+                <div className="px-12 py-8 bg-mycolors-bg text-left rounded-xl flex flex-col justify-center items-center sm:w-2/3 w-full h-3/4 text-mycolors-2 z-50 relative">
+                    <article className='flex flex-row items-center justify-end absolute top-4 right-4 gap-6 h-8'>
+                        <div className='flex items-center gap-2'>
+                        <div className='h-6 w-6 rounded-full aspect-square bg-mycolors-2'></div>
+                        <p className="text-white">Aprobado</p>
+                        </div>
+                        <div className='flex items-center gap-2'>
+                        <div className='h-6 w-6 rounded-full aspect-square bg-yellow-300'></div>
+                        <p className="text-white">Cursando</p>
+                        </div>
+                    </article>
+                    <Correlatividades />
                 </div>
             </div>
 
