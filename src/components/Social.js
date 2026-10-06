@@ -21,6 +21,15 @@ const Social = () => {
                     />
                 </a>
             </div>
+            <h2 className="mt-5 text-lg font-semibold text-mycolors-2">Download CV:</h2>
+            <div className="flex flex-wrap gap-3 mt-3">
+                <a href="/cv/CV-Manuel-Gurbanov-EN.pdf" download className="px-4 py-2 text-sm font-semibold text-white transition duration-75 rounded-lg bg-mycolors-1 ring-1 ring-mycolors-2 hover:scale-105">
+                    English
+                </a>
+                <a href="/cv/CV-Manuel-Gurbanov-ES.pdf" download className="px-4 py-2 text-sm font-semibold text-white transition duration-75 rounded-lg bg-mycolors-1 ring-1 ring-mycolors-2 hover:scale-105">
+                    Español
+                </a>
+            </div>
         </div>
     );
 };
